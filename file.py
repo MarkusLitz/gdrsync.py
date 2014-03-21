@@ -37,7 +37,7 @@ class File(object):
     def md5(self):
         if self.folder:
             md5 = hashlib.md5()
-            md5.update(self.name.encode('utf-8'))
+            md5.update(self.name)
 
             return md5.hexdigest()
 
